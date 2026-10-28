@@ -1,0 +1,69 @@
+erDiagram
+    authors ||--o{ book_authors : "wrote"
+    books ||--o{ book_authors : "written by"
+    books ||--o{ book_genres : "classified as"
+    book_genres }o--|| genres : "is a"
+    books ||--o{ copies : "has physical"
+    books ||--o{ reservations : "reserved as"
+    copies ||--o{ loans : "lent out in"
+    members ||--o{ loans : "borrows"
+    members ||--o{ reservations : "places"
+
+    books {
+        INTEGER book_id PK
+        TEXT title "NOT NULL"
+        TEXT isbn UK "10 chars"
+        TEXT isbn13 UK "13 chars"
+        INTEGER publication_year
+        TEXT edition
+    }
+    authors {
+        INTEGER author_id PK
+        TEXT name UK "NOT NULL"
+    }
+    book_authors {
+        INTEGER book_id PK, FK "ON DELETE CASCADE"
+        INTEGER author_id PK, FK "ON DELETE RESTRICT"
+        INTEGER author_order "NOT NULL, 1 = first listed"
+    }
+    genres {
+        INTEGER genre_id PK
+        TEXT name UK "NOT NULL"
+    }
+    book_genres {
+        INTEGER book_id PK, FK "ON DELETE CASCADE"
+        INTEGER genre_id PK, FK "ON DELETE RESTRICT"
+    }
+    copies {
+        INTEGER copy_id PK
+        INTEGER book_id FK "NOT NULL"
+        TEXT barcode UK "NOT NULL"
+        TEXT status "available | checked_out | overdue | lost"
+        TEXT acquired_date "NOT NULL"
+    }
+    members {
+        INTEGER member_id PK
+        TEXT membership_number UK "NOT NULL"
+        TEXT full_name "NOT NULL"
+        TEXT phone
+        TEXT email UK
+        TEXT home_address
+        TEXT join_date "NOT NULL"
+        TEXT status "active | suspended | expired"
+    }
+    loans {
+        INTEGER loan_id PK
+        INTEGER copy_id FK "one open loan per copy"
+        INTEGER member_id FK "max 5 open loans"
+        TEXT checkout_date "NOT NULL"
+        TEXT due_date "NOT NULL, checkout + 14 days"
+        TEXT returned_date "NULL until returned"
+        TEXT status "active | returned | overdue | lost"
+    }
+    reservations {
+        INTEGER reservation_id PK
+        INTEGER book_id FK "title, not a copy"
+        INTEGER member_id FK "NOT NULL"
+        TEXT reserved_at "NOT NULL"
+        TEXT status "waiting | fulfilled | cancelled"
+    }

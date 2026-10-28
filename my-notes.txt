@@ -1,0 +1,45 @@
+How I Would Run My Library
+
+Question 1: What information does the library need about books?
+
+If I opened a brand-new library on Monday morning, I would need a computer system to keep track of all my books. When I pull up a book, I want to see the title, author, ISBN number, genre, publication year, and edition. The ISBN helps identify a particular edition of a book.
+
+Some books have two or three authors, so I would make sure the system allows me to add multiple authors instead of just one. I would also allow books to have more than one genre. For example, a book could be science fiction and adventure.
+
+I would keep the book record separate from the physical copies. If I have three copies of Dune, I would have one book record for that edition, but three separate copies in my system. Each copy would have its own barcode or copy ID so I know exactly which one is being borrowed, returned, lost, or damaged.
+
+Question 2: What information does the library need about members?
+
+When someone signs up for my library, I would need their full name, phone number, email address, home address, and the date they joined. I would give each person a library card with a unique membership ID.
+
+I would also keep track of whether their membership is active, suspended, or expired. This would help me know if they are allowed to borrow books.
+
+I would set a limit of five books per person at one time. That way, people can borrow multiple books, but there are still enough books available for other members.
+
+Question 3: What happens when someone borrows a book?
+
+When someone borrows a book, I would scan their library card and the barcode on the book. My computer would record who borrowed it, which copy they borrowed, the date they checked it out, and when it needs to be returned.
+
+I would give people 14 days to return their books. If someone checks out four books, I would track each one separately because they might return them on different days.
+
+My system would show whether a book is available, checked out, overdue, or lost. If someone returns a book, I would enter the return date and change that copy's status back to available.
+
+If someone doesn't return a book by the due date, the system would mark it overdue. If the book never comes back, I would eventually mark it as lost and contact the person who borrowed it.
+
+Question 4: What are the real-world rules of my library?
+
+If I owned a library, I would want rules that are fair and easy for everyone to follow.
+
+I would allow each person to borrow up to five books at once. Two people would not be allowed to borrow the same physical copy at the same time, but they could borrow the same title if I had multiple copies available.
+
+I would allow members to reserve books that are already checked out. When the book gets returned, I would notify the next person waiting for it.
+
+I would not charge late fees right away because I understand that sometimes people forget or get busy. Instead, I would send reminders. If someone keeps a book too long, I would temporarily stop them from borrowing more books until they return it.
+
+If someone loses a book, I would ask them to replace it or pay for it. I would keep the lost book in my computer system so I still have a record of what happened, but I would not show that copy as available.
+
+Final Thoughts
+
+If I were running my own library, my main goal would be to keep everything organized and make borrowing books simple. I would want to know what books I have, how many copies are available, who has borrowed them, and when they are supposed to come back. I would also want to make sure members are treated fairly. Having a good computer system would make it easier for me to manage the library every day and help people find the books they need.
+
+ 
